@@ -9,7 +9,6 @@ namespace ApiPeliculas.Models.Dtos
     public class CategoriaDto
     {
         //CREAR CAMPOS EN BD
-       
         public int Id { get; set; }
         [Required(ErrorMessage ="El Nombre es Obligatorio")]
         public string Nombre { get; set; }

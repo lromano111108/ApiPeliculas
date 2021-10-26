@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj": {}
+    "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\Api\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj": {}
   },
   "projects": {
-    "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj": {
+    "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\Api\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+        "projectUniqueName": "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\Api\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
         "projectName": "ApiPeliculas",
-        "projectPath": "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
-        "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\ApiPeliculas\\ApiPeliculas\\obj\\",
+        "projectPath": "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\Api\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos Notebook\\CURSO ASPNET ALAN\\Api\\ApiPeliculas\\ApiPeliculas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -46,17 +48,19 @@
               "target": "Package",
               "version": "[8.1.1, )"
             },
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
             }
           },
           "imports": [
@@ -77,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

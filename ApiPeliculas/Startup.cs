@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ApiPeliculas.Data;
+using ApiPeliculas.PeliculasMapper;
 using ApiPeliculas.Repository;
 using ApiPeliculas.Repository.IRepository;
 using Microsoft.AspNetCore.Builder;
@@ -32,7 +33,9 @@ namespace ApiPeliculas
 
             services.AddDbContext<ApplicationDbContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<ICategoriaRepository, CategoriaRepository>(); //inyecta el repositorio a todas las dependencias
+            services.AddScoped<IPeliculaRepository, PeliculaRepository>(); //inyecta el repositorio a todas las dependencias
             services.AddControllers();
+            services.AddAutoMapper(typeof(PeliculasMappers));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
